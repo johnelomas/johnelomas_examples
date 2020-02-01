@@ -1,0 +1,33 @@
+body {
+	background-color:lightcyan
+}
+
+#english_hello {
+	color: blue;
+	font-size: 30px;
+	text-align: center;	
+}
+
+#german_hello {
+	color: gold;
+	font-size: 30px;
+	text-align: center;	
+}
+
+#spanish_hello {
+	color: red;
+	font-size: 30px;
+	text-align: center;	
+}
+
+.notromantic {
+	color: lightcoral;
+	font-size: 30px;
+	text-align: center;	
+}
+
+.romantic {
+	color: indigo;
+	font-size: 30px;
+	text-align: center;	
+}
