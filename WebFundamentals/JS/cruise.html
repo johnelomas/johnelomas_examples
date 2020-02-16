@@ -1,0 +1,43 @@
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Cruise Purchase Example</title>	
+			<script src=".\cruise.js"></script>
+			<link rel="stylesheet" href="cruise.css">
+		</head>
+		<body>
+			<h1>Around the World Cruise Purchase</h1>
+			<div id="passengers">
+				<h2>Passenger List</h2>
+				<ul id="passengerList">
+					<li id="NoPassengers">Enter Passenger Names.</li>
+				</ul>
+				<button id="addPass" onClick="addPassenger()">Add Passenger</p>
+				<button id="addDone" onClick="addingDone()" style="visibility:hidden;">No More Passengers</p>
+			</div>
+			<div id="payment">
+				<h2>Payment Due</h2>
+				<div id="charges">
+					<label id="passengerCount"></label>
+					<label>@ $10,000 per person</label>
+					<label id="total"></label>
+					<hr/>
+				</div>
+				<div id="creditCard">
+					<label>Enter Credit Card Number</label>
+					<input id="ccNumber" type="text"></input>
+					<label id="invalidCC">Invalid Credit Card Number</label>
+				</div>
+				<div>
+					<input type="checkbox" id="yesToTerms" name="terms" onClick="termsChecked()">
+					<label for="yesToTerms"> I agree to Terms of Services and Payment Terms.</label>
+					<hr/>
+				</div>
+				<button id="makePayment" onClick="submitPayment()">Make Payment</button>
+				<br/>
+				<h2 id="thankYou">Thank you for your payment! Have a great cruise!</h2>
+				
+			</div>			
+		</body>
+	</html>
