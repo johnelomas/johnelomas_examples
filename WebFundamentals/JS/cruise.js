@@ -2,7 +2,6 @@
 	
 	function addPassenger() {
 		var name = '';
-		var listNode = document.createElement("li");
 		name = prompt("What is the next passenger's name?", "");
 		
 		if(validateName(name) === false) {
@@ -10,6 +9,7 @@
 		} else {
 			var none = document.getElementById("NoPassengers");
 			if (none !== null) {document.getElementById("passengerList").removeChild(none);}
+			var listNode = document.createElement("li");
 			listNode.innerHTML = name;
 			passengerCount++;
 			document.getElementById("passengerList").appendChild(listNode);
